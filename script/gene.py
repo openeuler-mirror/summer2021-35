@@ -16,9 +16,6 @@ def digit_len(num: int) -> int:
 def main():
     cmd = 'git log --pretty=format:"%H" ./mm/kfence'
     commits = get_output(cmd).splitlines()[::-1]
-    for i in commits:
-        print(i)
-    return
 
     prefix_len = 4
     patches = []
