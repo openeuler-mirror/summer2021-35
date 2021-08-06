@@ -14,12 +14,12 @@ def digit_len(num: int) -> int:
 
 
 def main():
-    cmd = 'git log --pretty=format:"%H" ./mm/kfence'
-    commits = get_output(cmd).splitlines()
+    with open('patch-list', 'r') as file:
+        commits = file.readlines()
 
     prefix_len = 4
     patches = []
-    for serial, commit in enumerate(commits[::-1]):
+    for serial, commit in enumerate(commits):
         serial += 1
         patch = get_output(f'git format-patch -1 {commit}')
         zero_width = prefix_len - digit_len(serial)
