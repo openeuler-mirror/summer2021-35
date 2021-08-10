@@ -1,4 +1,4 @@
-From f5048ba8396b3e7e385479fae455c0426d9103bb Mon Sep 17 00:00:00 2001
+From f9055db24a6e99965ce759a25647b7537e0d7213 Mon Sep 17 00:00:00 2001
 From: Alexander Potapenko <glider@google.com>
 Date: Thu, 25 Feb 2021 17:18:53 -0800
 Subject: [PATCH] mm: add Kernel Electric-Fence infrastructure
@@ -158,7 +158,6 @@ Signed-off-by: Linus Torvalds <torvalds@linux-foundation.org>
 ---
  include/linux/kfence.h | 216 +++++++++++
  init/main.c            |   3 +
- init/main.c.rej        |   9 +
  lib/Kconfig.debug      |   1 +
  lib/Kconfig.kfence     |  67 ++++
  mm/Makefile            |   1 +
@@ -166,9 +165,8 @@ Signed-off-by: Linus Torvalds <torvalds@linux-foundation.org>
  mm/kfence/core.c       | 840 +++++++++++++++++++++++++++++++++++++++++
  mm/kfence/kfence.h     | 113 ++++++
  mm/kfence/report.c     | 240 ++++++++++++
- 10 files changed, 1493 insertions(+)
+ 9 files changed, 1484 insertions(+)
  create mode 100644 include/linux/kfence.h
- create mode 100644 init/main.c.rej
  create mode 100644 lib/Kconfig.kfence
  create mode 100644 mm/kfence/Makefile
  create mode 100644 mm/kfence/core.c
@@ -425,21 +423,6 @@ index 32b2a8affafd..36acf4b90bd1 100644
  
  	/*
  	 * For best initial stack canary entropy, prepare it after:
-diff --git a/init/main.c.rej b/init/main.c.rej
-new file mode 100644
-index 000000000000..322da23a8c3f
---- /dev/null
-+++ b/init/main.c.rej
-@@ -0,0 +1,9 @@
-+diff a/init/main.c b/init/main.c	(rejected hunks)
-+@@ -824,6 +825,7 @@ static void __init mm_init(void)
-+ 	 */
-+ 	page_ext_init_flatmem();
-+ 	init_mem_debugging_and_hardening();
-++	kfence_alloc_pool();
-+ 	report_meminit();
-+ 	mem_init();
-+ 	/* page_owner must be initialized after buddy is ready */
 diff --git a/lib/Kconfig.debug b/lib/Kconfig.debug
 index c789b39ed527..abb4e117cd8c 100644
 --- a/lib/Kconfig.debug
