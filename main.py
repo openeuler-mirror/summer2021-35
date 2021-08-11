@@ -51,7 +51,7 @@ def pretty_output_changes(changes: list):
     colorama.init()
     print()
     print(colorama.Fore.YELLOW + '*'*6 + 'got it!' + '*'*6)
-    print('involved changes' + colorama.Fore.GREEN + f'{len(changes)}')
+    print('involved changes: ' + colorama.Fore.GREEN + f'{len(changes)}')
     for commit in changes:
         print(colorama.Fore.BLUE + commit)
 
@@ -128,10 +128,10 @@ class Repo:
         # Iterate every commit in history by order
         commit_amount = len(self.file_history)
         for cnt, commit in enumerate(self.file_history[::-1]):
-            # 'git checkout' to specific commit for searching
-            self.checkout(commit)
             # Check if target exist
-            if self.target in read_file(self.file):
+            result = get_output(
+                f'git format-patch -1 --stdout {commit} | grep -c {self.target}')
+            if result != '0':
                 self.origin_commit = commit
                 pretty_output_origin(commit)
                 return
