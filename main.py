@@ -38,6 +38,24 @@ def read_file(file_path):
     return content
 
 
+def pretty_output_origin(origin: str):
+    """Output the origin commit with color"""
+    colorama.init()
+    print()
+    print(colorama.Fore.YELLOW + '*'*6 + 'got it!' + '*'*6)
+    print(colorama.Fore.GREEN + origin)
+
+
+def pretty_output_changes(changes: list):
+    """Output the origin commit with color"""
+    colorama.init()
+    print()
+    print(colorama.Fore.YELLOW + '*'*6 + 'got it!' + '*'*6)
+    print('involved changes' + colorama.Fore.GREEN + f'{len(changes)}')
+    for commit in changes:
+        print(colorama.Fore.BLUE + commit)
+
+
 class Repo:
     """Git repo class"""
 
@@ -49,6 +67,7 @@ class Repo:
         self.file = file
         self.file_history = None
         self.target = target
+        self.origin_commit = None
 
     @property
     def repo(self):
@@ -102,21 +121,45 @@ class Repo:
                 f'''git log --pretty=format:'%H' {self.file}''')
         self.file_history = commits.splitlines()
 
-    def track(self):
+    def find_origin(self):
         """
         Track a string in specific file.
         """
         # Iterate every commit in history by order
-        for commit in self.file_history[::-1]:
+        commit_amount = len(self.file_history)
+        for cnt, commit in enumerate(self.file_history[::-1]):
             # 'git checkout' to specific commit for searching
             self.checkout(commit)
-            # Check if taret exist
+            # Check if target exist
             if self.target in read_file(self.file):
-                colorama.init()
-                print()
-                print(colorama.Fore.YELLOW + '*'*6 + 'got it!' + '*'*6)
-                print(colorama.Fore.GREEN + commit)
+                self.origin_commit = commit
+                pretty_output_origin(commit)
                 return
+
+            print(f'{cnt+1} of {commit_amount} checked')
+
+    def track_changes(self):
+        # Switch to other branch or format-patch will output nonthing
+        # If is on the same stage with commit
+        self.switch('kernel-v5.13')
+
+        history = self.file_history
+        # From latest to old
+        history = history[:history.index(self.origin_commit)+1]
+        commit_amount = len(history)
+        involved_changes = []
+        colorama.reinit()
+        for cnt, commit in enumerate(history):
+            result = get_output(
+                f'git format-patch -1 --stdout {commit} | grep -c {self.target}')
+
+            if result != '0':
+                print(f'{len(involved_changes)} hits')
+                involved_changes.append(commit)
+
+            print(f'checking format-patch {cnt+1} of {commit_amount}')
+
+        pretty_output_changes(involved_changes)
 
 
 def main():
@@ -130,7 +173,10 @@ def main():
     repo.get_file_history()
 
     # Track string
-    repo.track()
+    repo.find_origin()
+
+    # Track changes
+    repo.track_changes()
 
 
 if __name__ == '__main__':
