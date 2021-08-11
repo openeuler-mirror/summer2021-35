@@ -1,5 +1,0 @@
-# file: target file path
-# target: target sentence in file
-repo: /home/shang/Documents/code/linux
-file: arch/x86/mm/fault.c
-target: page_fault_oops
