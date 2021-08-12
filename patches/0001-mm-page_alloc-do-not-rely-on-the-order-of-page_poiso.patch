@@ -1,4 +1,4 @@
-From e9d6d9168211b61fabf86f75b497035c6783e56e Mon Sep 17 00:00:00 2001
+From 584737440e3a9d7b4cb0661fb6d8f25fc650483f Mon Sep 17 00:00:00 2001
 From: Vlastimil Babka <vbabka@suse.cz>
 Date: Mon, 14 Dec 2020 19:13:30 -0800
 Subject: [PATCH] mm, page_alloc: do not rely on the order of page_poison and
@@ -62,10 +62,8 @@ Signed-off-by: Linus Torvalds <torvalds@linux-foundation.org>
 ---
  include/linux/mm.h | 20 ++---------
  init/main.c        |  3 +-
- init/main.c.rej    | 10 ++++++
  mm/page_alloc.c    | 88 ++++++++++++++++++++++------------------------
- 4 files changed, 57 insertions(+), 64 deletions(-)
- create mode 100644 init/main.c.rej
+ 3 files changed, 47 insertions(+), 64 deletions(-)
 
 diff --git a/include/linux/mm.h b/include/linux/mm.h
 index db6ae4d3fb4e..38ecf02938ae 100644
@@ -133,22 +131,6 @@ index 32b2a8affafd..815cd1ff6947 100644
  	kmem_cache_init();
  	kmemleak_init();
  	pgtable_init();
-diff --git a/init/main.c.rej b/init/main.c.rej
-new file mode 100644
-index 000000000000..c31ababb9090
---- /dev/null
-+++ b/init/main.c.rej
-@@ -0,0 +1,10 @@
-+diff a/init/main.c b/init/main.c	(rejected hunks)
-+@@ -824,7 +824,7 @@ static void __init mm_init(void)
-+ 	 * bigger than MAX_ORDER unless SPARSEMEM.
-+ 	 */
-+ 	page_ext_init_flatmem();
-+-	init_debug_pagealloc();
-++	init_mem_debugging_and_hardening();
-+ 	report_meminit();
-+ 	mem_init();
-+ 	/* page_owner must be initialized after buddy is ready */
 diff --git a/mm/page_alloc.c b/mm/page_alloc.c
 index eaa227a479e4..dc79639431b9 100644
 --- a/mm/page_alloc.c
