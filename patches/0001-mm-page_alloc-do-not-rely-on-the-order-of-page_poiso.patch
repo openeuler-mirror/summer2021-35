@@ -127,7 +127,7 @@ index 32b2a8affafd..815cd1ff6947 100644
 +	init_mem_debugging_and_hardening();
  	report_meminit();
  	mem_init();
-+ 	/* page_owner must be initialized after buddy is ready */
++	/* page_owner must be initialized after buddy is ready */
  	kmem_cache_init();
  	kmemleak_init();
  	pgtable_init();
