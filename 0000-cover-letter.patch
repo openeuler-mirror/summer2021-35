@@ -1,0 +1,67 @@
+From 3a30058bc8fd58e0eba21055fde55fb6dbc8ed81 Mon Sep 17 00:00:00 2001
+From: shang <1415317271@qq.com>
+Date: Mon, 16 Aug 2021 17:46:19 +0800
+Subject: [PATCH 0/9] *** SUBJECT HERE ***
+
+*** BLURB HERE ***
+
+Yingjie Shang:
+  Transplant KFENCE from Linux kernel v5.13 to openEuler kernel OLK 5.10.
+
+Bixuan Cui:
+  Reviewd the transplant patches.
+
+Alexander Potapenko (5):
+  mm: add Kernel Electric-Fence infrastructure
+  x86, kfence: enable KFENCE for x86
+  mm, kfence: insert KFENCE hooks for SLAB
+  mm, kfence: insert KFENCE hooks for SLUB
+  kfence, kasan: make KFENCE compatible with KASAN
+
+Marco Elver (4):
+  arm64, kfence: enable KFENCE for ARM64
+  kfence: use pt_regs to generate stack trace on faults
+  kfence, Documentation: add KFENCE documentation
+  kfence: add test suite
+
+ Documentation/dev-tools/index.rst  |   1 +
+ Documentation/dev-tools/kfence.rst | 298 ++++++++++
+ arch/arm64/Kconfig                 |   1 +
+ arch/arm64/include/asm/kfence.h    |  22 +
+ arch/arm64/mm/fault.c              |   4 +
+ arch/arm64/mm/mmu.c                |   7 +-
+ arch/x86/Kconfig                   |   1 +
+ arch/x86/include/asm/kfence.h      |  64 +++
+ arch/x86/mm/fault.c                |   5 +
+ include/linux/kfence.h             | 222 ++++++++
+ include/linux/slab_def.h           |   3 +
+ include/linux/slub_def.h           |   3 +
+ init/main.c                        |   3 +
+ lib/Kconfig.debug                  |   1 +
+ lib/Kconfig.kfence                 |  82 +++
+ mm/Makefile                        |   1 +
+ mm/kasan/common.c                  |   6 +
+ mm/kasan/generic.c                 |   3 +-
+ mm/kfence/Makefile                 |   6 +
+ mm/kfence/core.c                   | 845 ++++++++++++++++++++++++++++
+ mm/kfence/kfence.h                 | 113 ++++
+ mm/kfence/kfence_test.c            | 858 +++++++++++++++++++++++++++++
+ mm/kfence/report.c                 | 258 +++++++++
+ mm/slab.c                          |  38 +-
+ mm/slab_common.c                   |   5 +-
+ mm/slub.c                          |  61 +-
+ 26 files changed, 2884 insertions(+), 27 deletions(-)
+ create mode 100644 Documentation/dev-tools/kfence.rst
+ create mode 100644 arch/arm64/include/asm/kfence.h
+ create mode 100644 arch/x86/include/asm/kfence.h
+ create mode 100644 include/linux/kfence.h
+ create mode 100644 lib/Kconfig.kfence
+ create mode 100644 mm/kfence/Makefile
+ create mode 100644 mm/kfence/core.c
+ create mode 100644 mm/kfence/kfence.h
+ create mode 100644 mm/kfence/kfence_test.c
+ create mode 100644 mm/kfence/report.c
+
+-- 
+2.25.1
+
