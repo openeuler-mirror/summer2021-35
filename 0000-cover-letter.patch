@@ -3,7 +3,10 @@ From: shang <1415317271@qq.com>
 Date: Mon, 16 Aug 2021 17:46:19 +0800
 Subject: [PATCH 0/9] *** SUBJECT HERE ***
 
-*** BLURB HERE ***
+Transplantation of KFENCE
+
+KFENCE could detect many types of memory safety errors.
+The test cases successfully output the log when booting the kernel after enabling the KFENCE and KFENCE integration test suite at the openEuler OLK 5.10 kernel compile.
 
 Yingjie Shang:
   Transplant KFENCE from Linux kernel v5.13 to openEuler kernel OLK 5.10.
