@@ -1,7 +1,7 @@
 From a0caac0e27864ddae00ed386a2f39f40eae07fc4 Mon Sep 17 00:00:00 2001
 From: Alexander Potapenko <glider@google.com>
 Date: Thu, 25 Feb 2021 17:18:57 -0800
-Subject: [PATCH 2/9] x86, kfence: enable KFENCE for x86
+Subject: [PATCH openEuler OLK-5.10 2/9] x86, kfence: enable KFENCE for x86
 
 Add architecture specific implementation details for KFENCE and enable
 KFENCE for the x86 architecture. In particular, this implements the

@@ -1,7 +1,7 @@
 From c7de833bbc3fc919b93ba738fa877149a44e6cf5 Mon Sep 17 00:00:00 2001
 From: Alexander Potapenko <glider@google.com>
 Date: Thu, 25 Feb 2021 17:19:16 -0800
-Subject: [PATCH 6/9] mm, kfence: insert KFENCE hooks for SLUB
+Subject: [PATCH openEuler OLK-5.10 6/9] mm, kfence: insert KFENCE hooks for SLUB
 
 Inserts KFENCE hooks into the SLUB allocator.
 

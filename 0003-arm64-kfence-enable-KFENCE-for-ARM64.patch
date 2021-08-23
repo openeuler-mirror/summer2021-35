@@ -1,7 +1,7 @@
 From 66a64afb387ea6ebc6a590a33761e9f8779363e5 Mon Sep 17 00:00:00 2001
 From: Marco Elver <elver@google.com>
 Date: Thu, 25 Feb 2021 17:19:03 -0800
-Subject: [PATCH 3/9] arm64, kfence: enable KFENCE for ARM64
+Subject: [PATCH openEuler OLK-5.10 3/9] arm64, kfence: enable KFENCE for ARM64
 
 Add architecture specific implementation details for KFENCE and enable
 KFENCE for the arm64 architecture. In particular, this implements the

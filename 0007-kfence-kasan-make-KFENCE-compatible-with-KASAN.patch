@@ -1,7 +1,7 @@
 From 61d51dbd4cb986c12bdb2008186cf00f61a798aa Mon Sep 17 00:00:00 2001
 From: Alexander Potapenko <glider@google.com>
 Date: Thu, 25 Feb 2021 17:19:21 -0800
-Subject: [PATCH 7/9] kfence, kasan: make KFENCE compatible with KASAN
+Subject: [PATCH openEuler OLK-5.10 7/9] kfence, kasan: make KFENCE compatible with KASAN
 
 Make KFENCE compatible with KASAN. Currently this helps test KFENCE
 itself, where KASAN can catch potential corruptions to KFENCE state, or
