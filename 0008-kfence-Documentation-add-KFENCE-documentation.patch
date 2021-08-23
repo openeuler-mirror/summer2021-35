@@ -1,7 +1,7 @@
 From ce40e106fc0683efa809bfad6303fe011257a6fc Mon Sep 17 00:00:00 2001
 From: Marco Elver <elver@google.com>
 Date: Thu, 25 Feb 2021 17:19:26 -0800
-Subject: [PATCH openEuler OLK-5.10 8/9] kfence, Documentation: add KFENCE documentation
+Subject: [PATCH OLK-5.10 8/9] kfence, Documentation: add KFENCE documentation
 
 Add KFENCE documentation in dev-tools/kfence.rst, and add to index.
 

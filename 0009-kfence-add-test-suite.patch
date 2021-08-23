@@ -1,7 +1,7 @@
 From 3a30058bc8fd58e0eba21055fde55fb6dbc8ed81 Mon Sep 17 00:00:00 2001
 From: Marco Elver <elver@google.com>
 Date: Thu, 25 Feb 2021 17:19:31 -0800
-Subject: [PATCH openEuler OLK-5.10 9/9] kfence: add test suite
+Subject: [PATCH OLK-5.10 9/9] kfence: add test suite
 
 Add KFENCE test suite, testing various error detection scenarios. Makes
 use of KUnit for test organization. Since KFENCE's interface to obtain

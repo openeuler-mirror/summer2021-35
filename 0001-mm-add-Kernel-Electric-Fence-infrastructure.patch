@@ -1,7 +1,7 @@
 From a55c9fd335e279b1660ba9cd2eefc23b22f8dbba Mon Sep 17 00:00:00 2001
 From: Alexander Potapenko <glider@google.com>
 Date: Thu, 25 Feb 2021 17:18:53 -0800
-Subject: [PATCH openEuler OLK-5.10 1/9] mm: add Kernel Electric-Fence infrastructure
+Subject: [PATCH OLK-5.10 1/9] mm: add Kernel Electric-Fence infrastructure
 
 Patch series "KFENCE: A low-overhead sampling-based memory safety error detector", v7.
 

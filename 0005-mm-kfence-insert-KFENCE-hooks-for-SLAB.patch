@@ -1,7 +1,7 @@
 From 120f06a141554dc15a47086fcc400980af6a0066 Mon Sep 17 00:00:00 2001
 From: Alexander Potapenko <glider@google.com>
 Date: Thu, 25 Feb 2021 17:19:11 -0800
-Subject: [PATCH openEuler OLK-5.10 5/9] mm, kfence: insert KFENCE hooks for SLAB
+Subject: [PATCH OLK-5.10 5/9] mm, kfence: insert KFENCE hooks for SLAB
 
 Inserts KFENCE hooks into the SLAB allocator.
 

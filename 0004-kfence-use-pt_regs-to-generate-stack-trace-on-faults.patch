@@ -1,7 +1,7 @@
 From 90b806140d76ee480fb261f700d410a4f15a2865 Mon Sep 17 00:00:00 2001
 From: Marco Elver <elver@google.com>
 Date: Thu, 25 Feb 2021 17:19:08 -0800
-Subject: [PATCH openEuler OLK-5.10 4/9] kfence: use pt_regs to generate stack trace on faults
+Subject: [PATCH OLK-5.10 4/9] kfence: use pt_regs to generate stack trace on faults
 
 Instead of removing the fault handling portion of the stack trace based on
 the fault handler's name, just use struct pt_regs directly.
