@@ -1,0 +1,103 @@
+make[1]: Entering directory '/root/lmbench-3.0-a9/results'
+
+                 L M B E N C H  3 . 0   S U M M A R Y
+                 ------------------------------------
+		 (Alpha software, do not distribute)
+
+Basic system parameters
+------------------------------------------------------------------------------
+Host                 OS Description              Mhz  tlb  cache  mem   scal
+                                                     pages line   par   load
+                                                           bytes  
+--------- ------------- ----------------------- ---- ----- ----- ------ ----
+MiEuler   Linux 5.10.0-        x86_64-linux-gnu 3388                       1
+MiEuler   Linux 5.10.0-        x86_64-linux-gnu 3388                       1
+
+Processor, Processes - times in microseconds - smaller is better
+------------------------------------------------------------------------------
+Host                 OS  Mhz null null      open slct sig  sig  fork exec sh  
+                             call  I/O stat clos TCP  inst hndl proc proc proc
+--------- ------------- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ----
+MiEuler   Linux 5.10.0- 3388 0.25 0.30 0.99 1.70 5.22 0.31 0.95 275. 1334 2126
+MiEuler   Linux 5.10.0- 3388 0.25 0.30 0.99 1.68 5.21 0.31 0.95 284. 1331 2137
+
+Basic integer operations - times in nanoseconds - smaller is better
+-------------------------------------------------------------------
+Host                 OS  intgr intgr  intgr  intgr  intgr  
+                          bit   add    mul    div    mod   
+--------- ------------- ------ ------ ------ ------ ------ 
+MiEuler   Linux 5.10.0- 0.2000 0.1500 0.9000 7.9900 8.1800
+MiEuler   Linux 5.10.0- 0.2000 0.1500 0.9000 7.9900 8.1800
+
+Basic uint64 operations - times in nanoseconds - smaller is better
+------------------------------------------------------------------
+Host                 OS int64  int64  int64  int64  int64  
+                         bit    add    mul    div    mod   
+--------- ------------- ------ ------ ------ ------ ------ 
+MiEuler   Linux 5.10.0-  0.200        0.9000   12.6   12.2
+MiEuler   Linux 5.10.0-  0.200        0.9000   12.6   12.2
+
+Basic float operations - times in nanoseconds - smaller is better
+-----------------------------------------------------------------
+Host                 OS  float  float  float  float
+                         add    mul    div    bogo
+--------- ------------- ------ ------ ------ ------ 
+MiEuler   Linux 5.10.0- 1.1800 1.1800 3.3400 0.8900
+MiEuler   Linux 5.10.0- 1.1800 1.1800 3.3400 0.8900
+
+Basic double operations - times in nanoseconds - smaller is better
+------------------------------------------------------------------
+Host                 OS  double double double double
+                         add    mul    div    bogo
+--------- ------------- ------  ------ ------ ------ 
+MiEuler   Linux 5.10.0- 1.1800 1.1800 4.2200 1.1800
+MiEuler   Linux 5.10.0- 1.1800 1.1800 4.2200 1.1800
+
+Context switching - times in microseconds - smaller is better
+-------------------------------------------------------------------------
+Host                 OS  2p/0K 2p/16K 2p/64K 8p/16K 8p/64K 16p/16K 16p/64K
+                         ctxsw  ctxsw  ctxsw ctxsw  ctxsw   ctxsw   ctxsw
+--------- ------------- ------ ------ ------ ------ ------ ------- -------
+MiEuler   Linux 5.10.0- 0.9700 1.0100 1.8400 1.5800 1.8200 1.82000 1.98000
+MiEuler   Linux 5.10.0- 1.0400 1.0700 1.7600 1.6000 2.0000 1.79000 2.26000
+
+*Local* Communication latencies in microseconds - smaller is better
+---------------------------------------------------------------------
+Host                 OS 2p/0K  Pipe AF     UDP  RPC/   TCP  RPC/ TCP
+                        ctxsw       UNIX         UDP         TCP conn
+--------- ------------- ----- ----- ---- ----- ----- ----- ----- ----
+MiEuler   Linux 5.10.0- 0.970 3.606 5.95  11.8  15.6  13.7  18.4  28.
+MiEuler   Linux 5.10.0- 1.040 3.768 6.01  11.7  15.5  13.5  18.3  28.
+
+*Remote* Communication latencies in microseconds - smaller is better
+---------------------------------------------------------------------
+Host                 OS   UDP  RPC/  TCP   RPC/ TCP
+                               UDP         TCP  conn
+--------- ------------- ----- ----- ----- ----- ----
+MiEuler   Linux 5.10.0-                             
+MiEuler   Linux 5.10.0-                             
+
+File & VM system latencies in microseconds - smaller is better
+-------------------------------------------------------------------------------
+Host                 OS   0K File      10K File     Mmap    Prot   Page   100fd
+                        Create Delete Create Delete Latency Fault  Fault  selct
+--------- ------------- ------ ------ ------ ------ ------- ----- ------- -----
+MiEuler   Linux 5.10.0- 7.6886 5.0905   15.5 7.5178  7499.0 0.553 0.03700 0.937
+MiEuler   Linux 5.10.0- 7.6479 5.0282   15.5 7.4740  7436.0 0.550 0.03810 0.937
+
+*Local* Communication bandwidths in MB/s - bigger is better
+-----------------------------------------------------------------------------
+Host                OS  Pipe AF    TCP  File   Mmap  Bcopy  Bcopy  Mem   Mem
+                             UNIX      reread reread (libc) (hand) read write
+--------- ------------- ---- ---- ---- ------ ------ ------ ------ ---- -----
+MiEuler   Linux 5.10.0- 5486 13.K 6991 8911.8  15.1K  11.2K 7471.3 13.K 10.6K
+MiEuler   Linux 5.10.0- 5576 13.K 6743 8804.2  14.9K  11.2K 7446.7 14.K 10.7K
+
+Memory latencies in nanoseconds - smaller is better
+    (WARNING - may not be correct, check graphs)
+------------------------------------------------------------------------------
+Host                 OS   Mhz   L1 $   L2 $    Main mem    Rand mem    Guesses
+--------- -------------   ---   ----   ----    --------    --------    -------
+MiEuler   Linux 5.10.0-  3388 1.1810 4.0090        18.8        83.1
+MiEuler   Linux 5.10.0-  3388 1.1810 4.0020        18.8        84.3
+make[1]: Leaving directory '/root/lmbench-3.0-a9/results'
