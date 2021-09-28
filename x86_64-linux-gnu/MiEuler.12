@@ -1,0 +1,165 @@
+[lmbench3.0 results for Linux MiEuler 5.10.0KFENCE+ #1 SMP Mon Sep 27 16:11:44 CST 2021 x86_64 x86_64 x86_64 GNU/Linux]
+[LMBENCH_VER: 3.0-a9]
+[BENCHMARK_HARDWARE: YES]
+[BENCHMARK_OS: YES]
+[ALL: 512 1k 2k 4k 8k 16k 32k 64k 128k 256k 512k 1m 2m 4m 8m 16m 32m 64m 128m 256m 512m 1024m 2048m 4096m]
+[DISKS: ]
+[DISK_DESC: ]
+[ENOUGH: 5000]
+[FAST: ]
+[FASTMEM: NO]
+[FILE: /usr/tmp/XXX]
+[FSDIR: /usr/tmp]
+[HALF: 512 1k 2k 4k 8k 16k 32k 64k 128k 256k 512k 1m 2m 4m 8m 16m 32m 64m 128m 256m 512m 1024m 2048m]
+[INFO: INFO.MiEuler]
+[LINE_SIZE: ]
+[LOOP_O: 0.00000053]
+[MB: 5125]
+[MHZ: 3388 MHz, 0.2952 nanosec clock]
+[MOTHERBOARD: ]
+[NETWORKS: ]
+[PROCESSORS: 8]
+[REMOTE: ]
+[SLOWFS: NO]
+[OS: x86_64-linux-gnu]
+[SYNC_MAX: 1]
+[LMBENCH_SCHED: DEFAULT]
+[TIMING_O: 0]
+[LMBENCH VERSION: 3.0-a9]
+[USER: root]
+[HOSTNAME: MiEuler]
+[NODENAME: MiEuler]
+[SYSNAME: Linux]
+[PROCESSOR: x86_64]
+[MACHINE: x86_64]
+[RELEASE: 5.10.0KFENCE+]
+[VERSION: #1 SMP Mon Sep 27 16:11:44 CST 2021]
+[Mon 27 Sep 2021 10:05:11 PM CST]
+[ 22:05:11 up 5:07, 1 user, load average: 0.99, 1.00, 1.00]
+[net: Kernel Interface table]
+[net: Iface             MTU    RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg]
+[net: lo              65536  5747240      0      0 0       5747240      0      0      0 LRU]
+[if: lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536]
+[if: inet 127.0.0.1  netmask 255.0.0.0]
+[if: inet6 ::1  prefixlen 128  scopeid 0x10<host>]
+[if: loop  txqueuelen 1000  (Local Loopback)]
+[if: RX packets 5747240  bytes 122135956755 (113.7 GiB)]
+[if: RX errors 0  dropped 0  overruns 0  frame 0]
+[if: TX packets 5747240  bytes 122135956755 (113.7 GiB)]
+[if: TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0]
+[if: ]
+[net: virbr0           1500        0      0      0 0             0      0      0      0 BMU]
+[if: virbr0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500]
+[if: inet 192.168.122.1  netmask 255.255.255.0  broadcast 192.168.122.255]
+[if: ether 52:54:00:4d:ba:37  txqueuelen 1000  (Ethernet)]
+[if: RX packets 0  bytes 0 (0.0 B)]
+[if: RX errors 0  dropped 0  overruns 0  frame 0]
+[if: TX packets 0  bytes 0 (0.0 B)]
+[if: TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0]
+[if: ]
+[net: wlp2s0           1500    36766      0      0 0         47847      0      0      0 BMRU]
+[if: wlp2s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500]
+[if: inet 192.168.31.48  netmask 255.255.255.0  broadcast 192.168.31.255]
+[if: inet6 fe80::85a5:db27:9c27:da8f  prefixlen 64  scopeid 0x20<link>]
+[if: ether f8:94:c2:ed:52:97  txqueuelen 1000  (Ethernet)]
+[if: RX packets 36766  bytes 2121933 (2.0 MiB)]
+[if: RX errors 0  dropped 0  overruns 0  frame 0]
+[if: TX packets 47847  bytes 6198749 (5.9 MiB)]
+[if: TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0]
+[if: ]
+[mount: sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime,seclabel)]
+[mount: proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)]
+[mount: devtmpfs on /dev type devtmpfs (rw,nosuid,noexec,seclabel,size=3622900k,nr_inodes=905725,mode=755)]
+[mount: securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)]
+[mount: tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev,seclabel)]
+[mount: devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,seclabel,gid=5,mode=620,ptmxmode=000)]
+[mount: tmpfs on /run type tmpfs (rw,nosuid,nodev,seclabel,size=1499668k,nr_inodes=819200,mode=755)]
+[mount: tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,seclabel,size=4096k,nr_inodes=1024,mode=755)]
+[mount: cgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,xattr,release_agent=/usr/lib/systemd/systemd-cgroups-agent,name=systemd)]
+[mount: pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime,seclabel)]
+[mount: efivarfs on /sys/firmware/efi/efivars type efivarfs (rw,nosuid,nodev,noexec,relatime)]
+[mount: none on /sys/fs/bpf type bpf (rw,nosuid,nodev,noexec,relatime,mode=700)]
+[mount: cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,cpu,cpuacct)]
+[mount: cgroup on /sys/fs/cgroup/hugetlb type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,hugetlb)]
+[mount: cgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,freezer)]
+[mount: cgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,blkio)]
+[mount: cgroup on /sys/fs/cgroup/rdma type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,rdma)]
+[mount: cgroup on /sys/fs/cgroup/cpuset type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,cpuset)]
+[mount: cgroup on /sys/fs/cgroup/pids type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,pids)]
+[mount: cgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,memory)]
+[mount: cgroup on /sys/fs/cgroup/net_cls,net_prio type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,net_cls,net_prio)]
+[mount: cgroup on /sys/fs/cgroup/perf_event type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,perf_event)]
+[mount: cgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,devices)]
+[mount: cgroup on /sys/fs/cgroup/files type cgroup (rw,nosuid,nodev,noexec,relatime,seclabel,files)]
+[mount: configfs on /sys/kernel/config type configfs (rw,nosuid,nodev,noexec,relatime)]
+[mount: /dev/mapper/openeuler-root on / type ext4 (rw,relatime,seclabel)]
+[mount: selinuxfs on /sys/fs/selinux type selinuxfs (rw,nosuid,noexec,relatime)]
+[mount: systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=31,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=16079)]
+[mount: debugfs on /sys/kernel/debug type debugfs (rw,nosuid,nodev,noexec,relatime,seclabel)]
+[mount: hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime,seclabel,pagesize=2M)]
+[mount: mqueue on /dev/mqueue type mqueue (rw,nosuid,nodev,noexec,relatime,seclabel)]
+[mount: tracefs on /sys/kernel/tracing type tracefs (rw,nosuid,nodev,noexec,relatime,seclabel)]
+[mount: tmpfs on /tmp type tmpfs (rw,nosuid,nodev,seclabel,size=3749164k,nr_inodes=409600)]
+[mount: /dev/nvme0n1p6 on /boot type ext4 (rw,relatime,seclabel)]
+[mount: /dev/mapper/openeuler-home on /home type ext4 (rw,relatime,seclabel)]
+[mount: /dev/nvme0n1p2 on /boot/efi type vfat (rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=ascii,shortname=winnt,errors=remount-ro)]
+[mount: sunrpc on /var/lib/nfs/rpc_pipefs type rpc_pipefs (rw,relatime)]
+[mount: tmpfs on /run/user/0 type tmpfs (rw,nosuid,nodev,relatime,seclabel,size=749832k,nr_inodes=187458,mode=700)]
+[mount: tracefs on /sys/kernel/debug/tracing type tracefs (rw,nosuid,nodev,noexec,relatime,seclabel)]
+Simple syscall: 0.2357 microseconds
+Simple read: 0.3158 microseconds
+Simple write: 0.2981 microseconds
+Simple stat: 0.9806 microseconds
+Simple fstat: 0.3621 microseconds
+Simple open/close: 1.7534 microseconds
+Select on 10 fd's: 0.4177 microseconds
+Select on 100 fd's: 0.9692 microseconds
+Select on 250 fd's: 1.8509 microseconds
+Select on 500 fd's: 3.4552 microseconds
+Select on 10 tcp fd's: 0.5143 microseconds
+Select on 100 tcp fd's: 5.4414 microseconds
+Select on 250 tcp fd's: 13.6441 microseconds
+Select on 500 tcp fd's: 27.8159 microseconds
+Signal handler installation: 0.3012 microseconds
+Signal handler overhead: 0.9612 microseconds
+Protection fault: 0.5632 microseconds
+Pipe latency: 3.5287 microseconds
+AF_UNIX sock stream latency: 5.8742 microseconds
+Process fork+exit: 276.3158 microseconds
+Process fork+execve: 1349.0000 microseconds
+Process fork+/bin/sh -c: 2113.6667 microseconds
+integer bit: 0.20 nanoseconds
+integer add: 0.15 nanoseconds
+integer mul: 0.90 nanoseconds
+integer div: 7.99 nanoseconds
+integer mod: 8.10 nanoseconds
+int64 bit: 0.20 nanoseconds
+uint64 add: 0.15 nanoseconds
+int64 mul: 0.90 nanoseconds
+int64 div: 12.56 nanoseconds
+int64 mod: 12.15 nanoseconds
+float add: 1.18 nanoseconds
+float mul: 1.18 nanoseconds
+float div: 3.34 nanoseconds
+double add: 1.18 nanoseconds
+double mul: 1.18 nanoseconds
+double div: 4.22 nanoseconds
+float bogomflops: 0.89 nanoseconds
+double bogomflops: 1.18 nanoseconds
+integer bit parallelism: 3.50
+integer add parallelism: 1.90
+integer mul parallelism: 3.10
+integer div parallelism: 3.86
+integer mod parallelism: 4.05
+int64 bit parallelism: 1.91
+int64 add parallelism: 1.87
+int64 mul parallelism: 3.10
+int64 div parallelism: 1.67
+int64 mod parallelism: 1.70
+float add parallelism: 8.00
+float mul parallelism: 7.59
+float div parallelism: 3.73
+double add parallelism: 8.00
+double mul parallelism: 7.61
+double div parallelism: 3.55
+File /usr/tmp/XXX write bandwidth: 527169 KB/sec
