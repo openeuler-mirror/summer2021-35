@@ -1,0 +1,26 @@
+277339	x86_64-linux-gnu-MiEuler Linux 5.10.0 3.6057\ usecs %fill.7
+265393	x86_64-linux-gnu-MiEuler Linux 5.10.0 3.7680\ usecs %fill.7
+282008	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 3.5460\ usecs %fill.7
+279517	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 3.5776\ usecs %fill.7
+283390	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 3.5287\ usecs %fill.7
+282406	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 3.5410\ usecs %fill.7
+281017	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 3.5585\ usecs %fill.7
+270937	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 3.6909\ usecs %fill.7
+282949	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 3.5342\ usecs %fill.7
+279877	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 3.5730\ usecs %fill.7
+273853	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 3.6516\ usecs %fill.7
+280828	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 3.5609\ usecs %fill.7
+276388	x86_64-linux-gnu-MiEuler Linux 5.10.0 3.6181\ usecs %fill.7
+278606	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 3.5893\ usecs %fill.7
+277755	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 3.6003\ usecs %fill.7
+270175	x86_64-linux-gnu-MiEuler Linux 5.10.0 3.7013\ usecs %fill.7
+280804	x86_64-linux-gnu-MiEuler Linux 5.10.0 3.5612\ usecs %fill.7
+272190	x86_64-linux-gnu-MiEuler Linux 5.10.0 3.6739\ usecs %fill.7
+269375	x86_64-linux-gnu-MiEuler Linux 5.10.0 3.7123\ usecs %fill.7
+272673	x86_64-linux-gnu-MiEuler Linux 5.10.0 3.6674\ usecs %fill.7
+268032	x86_64-linux-gnu-MiEuler Linux 5.10.0 3.7309\ usecs %fill.7
+275839	x86_64-linux-gnu-MiEuler Linux 5.10.0 3.6253\ usecs %fill.7
+%Title n Number of pipe transactions per second
+%Title s lmbench v1.1
+%ps 16
+%ft R

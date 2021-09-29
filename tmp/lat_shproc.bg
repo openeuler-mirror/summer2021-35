@@ -1,0 +1,26 @@
+470	x86_64-linux-gnu-MiEuler Linux 5.10.0 2126.3333\ usecs %fill.7
+468	x86_64-linux-gnu-MiEuler Linux 5.10.0 2137.3333\ usecs %fill.7
+468	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 2137.3333\ usecs %fill.7
+481	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 2078.3333\ usecs %fill.7
+473	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 2113.6667\ usecs %fill.7
+475	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 2105.0000\ usecs %fill.7
+472	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 2120.0000\ usecs %fill.7
+476	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 2099.6667\ usecs %fill.7
+465	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 2152.6667\ usecs %fill.7
+474	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 2111.0000\ usecs %fill.7
+467	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 2143.3333\ usecs %fill.7
+470	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 2128.6667\ usecs %fill.7
+472	x86_64-linux-gnu-MiEuler Linux 5.10.0 2117.6667\ usecs %fill.7
+464	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 2153.6667\ usecs %fill.7
+470	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 2126.3333\ usecs %fill.7
+467	x86_64-linux-gnu-MiEuler Linux 5.10.0 2142.3333\ usecs %fill.7
+467	x86_64-linux-gnu-MiEuler Linux 5.10.0 2141.0000\ usecs %fill.7
+468	x86_64-linux-gnu-MiEuler Linux 5.10.0 2136.6667\ usecs %fill.7
+470	x86_64-linux-gnu-MiEuler Linux 5.10.0 2126.0000\ usecs %fill.7
+465	x86_64-linux-gnu-MiEuler Linux 5.10.0 2148.6667\ usecs %fill.7
+466	x86_64-linux-gnu-MiEuler Linux 5.10.0 2148.0000\ usecs %fill.7
+466	x86_64-linux-gnu-MiEuler Linux 5.10.0 2146.3333\ usecs %fill.7
+%Title n Number of simple process creates via /bin/sh per second
+%Title s lmbench v1.1
+%ps 16
+%ft R

@@ -1,0 +1,26 @@
+35658	x86_64-linux-gnu-MiEuler Linux 5.10.0 28.0439\ usecs %fill.7
+35288	x86_64-linux-gnu-MiEuler Linux 5.10.0 28.3384\ usecs %fill.7
+34677	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 28.8378\ usecs %fill.7
+34661	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 28.8507\ usecs %fill.7
+-1000000	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ -1\ usecs %fill.7
+33872	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 29.5233\ usecs %fill.7
+25780	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 38.7899\ usecs %fill.7
+34399	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 29.0707\ usecs %fill.7
+34416	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 29.0562\ usecs %fill.7
+34567	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 28.9296\ usecs %fill.7
+35032	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 28.5455\ usecs %fill.7
+34679	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 28.8358\ usecs %fill.7
+36185	x86_64-linux-gnu-MiEuler Linux 5.10.0 27.6359\ usecs %fill.7
+34405	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 29.0653\ usecs %fill.7
+34743	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 28.7824\ usecs %fill.7
+27235	x86_64-linux-gnu-MiEuler Linux 5.10.0 36.7181\ usecs %fill.7
+35506	x86_64-linux-gnu-MiEuler Linux 5.10.0 28.1642\ usecs %fill.7
+35292	x86_64-linux-gnu-MiEuler Linux 5.10.0 28.3350\ usecs %fill.7
+35389	x86_64-linux-gnu-MiEuler Linux 5.10.0 28.2571\ usecs %fill.7
+35714	x86_64-linux-gnu-MiEuler Linux 5.10.0 28.0000\ usecs %fill.7
+35639	x86_64-linux-gnu-MiEuler Linux 5.10.0 28.0594\ usecs %fill.7
+27077	x86_64-linux-gnu-MiEuler Linux 5.10.0 36.9320\ usecs %fill.7
+%Title n Number of local TCP socket connections per second
+%Title s lmbench v1.1
+%ps 16
+%ft R

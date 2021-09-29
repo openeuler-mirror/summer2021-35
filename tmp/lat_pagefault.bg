@@ -1,0 +1,26 @@
+27027027	x86_64-linux-gnu-MiEuler Linux 5.10.0 0.0370\ usecs %fill.7
+26246719	x86_64-linux-gnu-MiEuler Linux 5.10.0 0.0381\ usecs %fill.7
+26246719	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 0.0381\ usecs %fill.7
+26178010	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 0.0382\ usecs %fill.7
+27027027	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 0.0370\ usecs %fill.7
+26809651	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 0.0373\ usecs %fill.7
+26809651	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 0.0373\ usecs %fill.7
+26737968	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 0.0374\ usecs %fill.7
+26666667	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 0.0375\ usecs %fill.7
+26809651	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 0.0373\ usecs %fill.7
+26737968	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 0.0374\ usecs %fill.7
+26954178	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 0.0371\ usecs %fill.7
+26809651	x86_64-linux-gnu-MiEuler Linux 5.10.0 0.0373\ usecs %fill.7
+26666667	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 0.0375\ usecs %fill.7
+27173913	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ 0.0368\ usecs %fill.7
+25974026	x86_64-linux-gnu-MiEuler Linux 5.10.0 0.0385\ usecs %fill.7
+27100271	x86_64-linux-gnu-MiEuler Linux 5.10.0 0.0369\ usecs %fill.7
+26809651	x86_64-linux-gnu-MiEuler Linux 5.10.0 0.0373\ usecs %fill.7
+22026432	x86_64-linux-gnu-MiEuler Linux 5.10.0 0.0454\ usecs %fill.7
+22675737	x86_64-linux-gnu-MiEuler Linux 5.10.0 0.0441\ usecs %fill.7
+22123894	x86_64-linux-gnu-MiEuler Linux 5.10.0 0.0452\ usecs %fill.7
+0	x86_64-linux-gnu-MiEuler Linux 5.10.0 0\ usecs %fill.7
+%Title n Number of pagefaults per second
+%Title s lmbench v1.1
+%ps 16
+%ft R

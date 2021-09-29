@@ -1,0 +1,26 @@
+15187.58	Linux GNU/Linux %fill.7
+15245.85	Linux GNU/Linux %fill.7
+11926.22	Linux GNU/Linux %fill.7
+11892.41	Linux GNU/Linux %fill.7
+-1	Linux GNU/Linux %fill.7
+15188.50	Linux GNU/Linux %fill.7
+15191.25	Linux GNU/Linux %fill.7
+11979.45	Linux GNU/Linux %fill.7
+12005.16	Linux GNU/Linux %fill.7
+11856.69	Linux GNU/Linux %fill.7
+11924.11	Linux GNU/Linux %fill.7
+11900.84	Linux GNU/Linux %fill.7
+-1	Linux GNU/Linux %fill.7
+15166.53	Linux GNU/Linux %fill.7
+11951.71	Linux GNU/Linux %fill.7
+15178.42	Linux GNU/Linux %fill.7
+12005.16	Linux GNU/Linux %fill.7
+12024.52	Linux GNU/Linux %fill.7
+11977.31	Linux GNU/Linux %fill.7
+15196.75	Linux GNU/Linux %fill.7
+12115.70	Linux GNU/Linux %fill.7
+11934.71	Linux GNU/Linux %fill.7
+%Title n Memory read & sum bandwidth in MB / second
+%Title s lmbench v1.1
+%ps 16
+%ft R

@@ -1,0 +1,94 @@
+.sp .75i
+.po .23i
+.ft R
+.ps 16
+.vs 21
+.ce 100
+\s+2(Re)Read in MB / second\s0
+.ce 0
+.vs 
+.PS
+.ps 16
+.vs 11
+[
+# Variables, tweek these.
+	fillval = .12		# default fill value boxes
+	xsize = 4.3		# width of the graph
+	ysize = 4.2		# height of the graph
+	n = 22
+	boxpercent = 75 / 100
+	gap = xsize / n * (1 - boxpercent)
+	maxdata = 10610.82
+	yscale = ysize / maxdata
+	xscale = xsize / maxdata
+
+# Draw the graph borders 
+	O:	box invis ht ysize wid xsize
+boxht = ysize / n * boxpercent
+box fill .7 wid 8513.47 * xscale with .nw at O.nw - (0, gap /2 + 0 * (ysize/n))
+"\s+28513.47\s0  Linux GNU/Linux" ljust at last box.e + .1,0
+box fill .7 wid 8453.42 * xscale with .nw at O.nw - (0, gap /2 + 1 * (ysize/n))
+"\s+28453.42\s0  Linux GNU/Linux" ljust at last box.e + .1,0
+box fill .7 wid 10321.72 * xscale with .nw at O.nw - (0, gap /2 + 2 * (ysize/n))
+"\s+210321.72\s0  Linux GNU/Linux" ljust at last box.e + .1,0
+box fill .7 wid 10251.44 * xscale with .nw at O.nw - (0, gap /2 + 3 * (ysize/n))
+"\s+210251.44\s0  Linux GNU/Linux" ljust at last box.e + .1,0
+box fill .7 wid -1 * xscale with .nw at O.nw - (0, gap /2 + 4 * (ysize/n))
+"\s+2-1\s0  Linux GNU/Linux" ljust at last box.e + .1,0
+box fill .7 wid 10491.38 * xscale with .nw at O.nw - (0, gap /2 + 5 * (ysize/n))
+"\s+210491.38\s0  Linux GNU/Linux" ljust at last box.e + .1,0
+box fill .7 wid 10198.03 * xscale with .nw at O.nw - (0, gap /2 + 6 * (ysize/n))
+"\s+210198.03\s0  Linux GNU/Linux" ljust at last box.e + .1,0
+box fill .7 wid 10610.82 * xscale with .nw at O.nw - (0, gap /2 + 7 * (ysize/n))
+"\s+210610.82\s0  Linux GNU/Linux" ljust at last box.e + .1,0
+box fill .7 wid 10380.11 * xscale with .nw at O.nw - (0, gap /2 + 8 * (ysize/n))
+"\s+210380.11\s0  Linux GNU/Linux" ljust at last box.e + .1,0
+box fill .7 wid 10433.59 * xscale with .nw at O.nw - (0, gap /2 + 9 * (ysize/n))
+"\s+210433.59\s0  Linux GNU/Linux" ljust at last box.e + .1,0
+box fill .7 wid 10398.49 * xscale with .nw at O.nw - (0, gap /2 + 10 * (ysize/n))
+"\s+210398.49\s0  Linux GNU/Linux" ljust at last box.e + .1,0
+box fill .7 wid 10294.58 * xscale with .nw at O.nw - (0, gap /2 + 11 * (ysize/n))
+"\s+210294.58\s0  Linux GNU/Linux" ljust at last box.e + .1,0
+box fill .7 wid 8519.24 * xscale with .nw at O.nw - (0, gap /2 + 12 * (ysize/n))
+"\s+28519.24\s0  Linux GNU/Linux" ljust at last box.e + .1,0
+box fill .7 wid 10269.37 * xscale with .nw at O.nw - (0, gap /2 + 13 * (ysize/n))
+"\s+210269.37\s0  Linux GNU/Linux" ljust at last box.e + .1,0
+box fill .7 wid 9546.97 * xscale with .nw at O.nw - (0, gap /2 + 14 * (ysize/n))
+"\s+29546.97\s0  Linux GNU/Linux" ljust at last box.e + .1,0
+box fill .7 wid 8854.97 * xscale with .nw at O.nw - (0, gap /2 + 15 * (ysize/n))
+"\s+28854.97\s0  Linux GNU/Linux" ljust at last box.e + .1,0
+box fill .7 wid 8570.01 * xscale with .nw at O.nw - (0, gap /2 + 16 * (ysize/n))
+"\s+28570.01\s0  Linux GNU/Linux" ljust at last box.e + .1,0
+box fill .7 wid 8593.42 * xscale with .nw at O.nw - (0, gap /2 + 17 * (ysize/n))
+"\s+28593.42\s0  Linux GNU/Linux" ljust at last box.e + .1,0
+box fill .7 wid 8630.26 * xscale with .nw at O.nw - (0, gap /2 + 18 * (ysize/n))
+"\s+28630.26\s0  Linux GNU/Linux" ljust at last box.e + .1,0
+box fill .7 wid 8597.82 * xscale with .nw at O.nw - (0, gap /2 + 19 * (ysize/n))
+"\s+28597.82\s0  Linux GNU/Linux" ljust at last box.e + .1,0
+box fill .7 wid 9550.60 * xscale with .nw at O.nw - (0, gap /2 + 20 * (ysize/n))
+"\s+29550.60\s0  Linux GNU/Linux" ljust at last box.e + .1,0
+box fill .7 wid 8390.01 * xscale with .nw at O.nw - (0, gap /2 + 21 * (ysize/n))
+"\s+28390.01\s0  Linux GNU/Linux" ljust at last box.e + .1,0
+]
+box invis wid last [].wid + .5 ht last [].ht + .5 with .nw at last [].nw + (-.25, .25)
+move to last [].nw + 0,.25
+line thick 2 right 7
+move to last [].sw - 0,.25
+line thick 2 right 7
+.PE
+.ft
+.ps
+.vs
+.po
+.po .5i
+.ft R
+.ps 16
+.vs 21
+.sp .5
+.ce 100
+\s+2lmbench v1.1\s0
+.po
+.ft
+.ps
+.vs
+.ce 0

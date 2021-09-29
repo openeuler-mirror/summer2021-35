@@ -1,0 +1,94 @@
+.sp .75i
+.po .23i
+.ft R
+.ps 16
+.vs 21
+.ce 100
+\s+2Number of pipe transactions per second\s0
+.ce 0
+.vs 
+.PS
+.ps 16
+.vs 11
+[
+# Variables, tweek these.
+	fillval = .12		# default fill value boxes
+	xsize = 4.3		# width of the graph
+	ysize = 4.2		# height of the graph
+	n = 22
+	boxpercent = 75 / 100
+	gap = xsize / n * (1 - boxpercent)
+	maxdata = 283390
+	yscale = ysize / maxdata
+	xscale = xsize / maxdata
+
+# Draw the graph borders 
+	O:	box invis ht ysize wid xsize
+boxht = ysize / n * boxpercent
+box fill .7 wid 277339 * xscale with .nw at O.nw - (0, gap /2 + 0 * (ysize/n))
+"\s+1277339\s0,  x86_64-linux-gnu-MiEuler Linux 5.10.0,\  \s+13.6057\ usecs\s0" ljust at last box.e + .1,0
+box fill .7 wid 265393 * xscale with .nw at O.nw - (0, gap /2 + 1 * (ysize/n))
+"\s+1265393\s0,  x86_64-linux-gnu-MiEuler Linux 5.10.0,\  \s+13.7680\ usecs\s0" ljust at last box.e + .1,0
+box fill .7 wid 282008 * xscale with .nw at O.nw - (0, gap /2 + 2 * (ysize/n))
+"\s+1282008\s0,  x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+,\  \s+13.5460\ usecs\s0" ljust at last box.e + .1,0
+box fill .7 wid 279517 * xscale with .nw at O.nw - (0, gap /2 + 3 * (ysize/n))
+"\s+1279517\s0,  x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+,\  \s+13.5776\ usecs\s0" ljust at last box.e + .1,0
+box fill .7 wid 283390 * xscale with .nw at O.nw - (0, gap /2 + 4 * (ysize/n))
+"\s+1283390\s0,  x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+,\  \s+13.5287\ usecs\s0" ljust at last box.e + .1,0
+box fill .7 wid 282406 * xscale with .nw at O.nw - (0, gap /2 + 5 * (ysize/n))
+"\s+1282406\s0,  x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+,\  \s+13.5410\ usecs\s0" ljust at last box.e + .1,0
+box fill .7 wid 281017 * xscale with .nw at O.nw - (0, gap /2 + 6 * (ysize/n))
+"\s+1281017\s0,  x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+,\  \s+13.5585\ usecs\s0" ljust at last box.e + .1,0
+box fill .7 wid 270937 * xscale with .nw at O.nw - (0, gap /2 + 7 * (ysize/n))
+"\s+1270937\s0,  x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+,\  \s+13.6909\ usecs\s0" ljust at last box.e + .1,0
+box fill .7 wid 282949 * xscale with .nw at O.nw - (0, gap /2 + 8 * (ysize/n))
+"\s+1282949\s0,  x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+,\  \s+13.5342\ usecs\s0" ljust at last box.e + .1,0
+box fill .7 wid 279877 * xscale with .nw at O.nw - (0, gap /2 + 9 * (ysize/n))
+"\s+1279877\s0,  x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+,\  \s+13.5730\ usecs\s0" ljust at last box.e + .1,0
+box fill .7 wid 273853 * xscale with .nw at O.nw - (0, gap /2 + 10 * (ysize/n))
+"\s+1273853\s0,  x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+,\  \s+13.6516\ usecs\s0" ljust at last box.e + .1,0
+box fill .7 wid 280828 * xscale with .nw at O.nw - (0, gap /2 + 11 * (ysize/n))
+"\s+1280828\s0,  x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+,\  \s+13.5609\ usecs\s0" ljust at last box.e + .1,0
+box fill .7 wid 276388 * xscale with .nw at O.nw - (0, gap /2 + 12 * (ysize/n))
+"\s+1276388\s0,  x86_64-linux-gnu-MiEuler Linux 5.10.0,\  \s+13.6181\ usecs\s0" ljust at last box.e + .1,0
+box fill .7 wid 278606 * xscale with .nw at O.nw - (0, gap /2 + 13 * (ysize/n))
+"\s+1278606\s0,  x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+,\  \s+13.5893\ usecs\s0" ljust at last box.e + .1,0
+box fill .7 wid 277755 * xscale with .nw at O.nw - (0, gap /2 + 14 * (ysize/n))
+"\s+1277755\s0,  x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+,\  \s+13.6003\ usecs\s0" ljust at last box.e + .1,0
+box fill .7 wid 270175 * xscale with .nw at O.nw - (0, gap /2 + 15 * (ysize/n))
+"\s+1270175\s0,  x86_64-linux-gnu-MiEuler Linux 5.10.0,\  \s+13.7013\ usecs\s0" ljust at last box.e + .1,0
+box fill .7 wid 280804 * xscale with .nw at O.nw - (0, gap /2 + 16 * (ysize/n))
+"\s+1280804\s0,  x86_64-linux-gnu-MiEuler Linux 5.10.0,\  \s+13.5612\ usecs\s0" ljust at last box.e + .1,0
+box fill .7 wid 272190 * xscale with .nw at O.nw - (0, gap /2 + 17 * (ysize/n))
+"\s+1272190\s0,  x86_64-linux-gnu-MiEuler Linux 5.10.0,\  \s+13.6739\ usecs\s0" ljust at last box.e + .1,0
+box fill .7 wid 269375 * xscale with .nw at O.nw - (0, gap /2 + 18 * (ysize/n))
+"\s+1269375\s0,  x86_64-linux-gnu-MiEuler Linux 5.10.0,\  \s+13.7123\ usecs\s0" ljust at last box.e + .1,0
+box fill .7 wid 272673 * xscale with .nw at O.nw - (0, gap /2 + 19 * (ysize/n))
+"\s+1272673\s0,  x86_64-linux-gnu-MiEuler Linux 5.10.0,\  \s+13.6674\ usecs\s0" ljust at last box.e + .1,0
+box fill .7 wid 268032 * xscale with .nw at O.nw - (0, gap /2 + 20 * (ysize/n))
+"\s+1268032\s0,  x86_64-linux-gnu-MiEuler Linux 5.10.0,\  \s+13.7309\ usecs\s0" ljust at last box.e + .1,0
+box fill .7 wid 275839 * xscale with .nw at O.nw - (0, gap /2 + 21 * (ysize/n))
+"\s+1275839\s0,  x86_64-linux-gnu-MiEuler Linux 5.10.0,\  \s+13.6253\ usecs\s0" ljust at last box.e + .1,0
+]
+box invis wid last [].wid + .5 ht last [].ht + .5 with .nw at last [].nw + (-.25, .25)
+move to last [].nw + 0,.25
+line thick 2 right 7
+move to last [].sw - 0,.25
+line thick 2 right 7
+.PE
+.ft
+.ps
+.vs
+.po
+.po .5i
+.ft R
+.ps 16
+.vs 21
+.sp .5
+.ce 100
+\s+2lmbench v1.1\s0
+.po
+.ft
+.ps
+.vs
+.ce 0

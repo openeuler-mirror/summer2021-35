@@ -1,0 +1,26 @@
+14465.89	Linux GNU/Linux %fill.7
+14350.40	Linux GNU/Linux %fill.7
+15252.01	Linux GNU/Linux %fill.7
+14583.25	Linux GNU/Linux %fill.7
+-1	Linux GNU/Linux %fill.7
+14082.72	Linux GNU/Linux %fill.7
+15169.27	Linux GNU/Linux %fill.7
+14879.28	Linux GNU/Linux %fill.7
+13965.50	Linux GNU/Linux %fill.7
+13996.57	Linux GNU/Linux %fill.7
+13635.09	Linux GNU/Linux %fill.7
+13950.01	Linux GNU/Linux %fill.7
+13779.43	Linux GNU/Linux %fill.7
+14867.56	Linux GNU/Linux %fill.7
+14858.78	Linux GNU/Linux %fill.7
+13581.12	Linux GNU/Linux %fill.7
+14290.64	Linux GNU/Linux %fill.7
+14823.48	Linux GNU/Linux %fill.7
+13868.01	Linux GNU/Linux %fill.7
+14504.80	Linux GNU/Linux %fill.7
+14671.10	Linux GNU/Linux %fill.7
+14132.81	Linux GNU/Linux %fill.7
+%Title n Libc bcopy bandwidth in MB / second
+%Title s lmbench v1.1
+%ps 16
+%ft R

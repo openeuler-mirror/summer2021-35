@@ -1,0 +1,26 @@
+-1000000	x86_64-linux-gnu-MiEuler Linux 5.10.0 -1\ usecs %fill.7
+-1000000	x86_64-linux-gnu-MiEuler Linux 5.10.0 -1\ usecs %fill.7
+-1000000	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ -1\ usecs %fill.7
+-1000000	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ -1\ usecs %fill.7
+-1000000	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ -1\ usecs %fill.7
+-1000000	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ -1\ usecs %fill.7
+-1000000	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ -1\ usecs %fill.7
+-1000000	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ -1\ usecs %fill.7
+-1000000	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ -1\ usecs %fill.7
+-1000000	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ -1\ usecs %fill.7
+-1000000	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ -1\ usecs %fill.7
+-1000000	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ -1\ usecs %fill.7
+-1000000	x86_64-linux-gnu-MiEuler Linux 5.10.0 -1\ usecs %fill.7
+-1000000	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ -1\ usecs %fill.7
+-1000000	x86_64-linux-gnu-MiEuler Linux 5.10.0KFENCE+ -1\ usecs %fill.7
+-1000000	x86_64-linux-gnu-MiEuler Linux 5.10.0 -1\ usecs %fill.7
+-1000000	x86_64-linux-gnu-MiEuler Linux 5.10.0 -1\ usecs %fill.7
+-1000000	x86_64-linux-gnu-MiEuler Linux 5.10.0 -1\ usecs %fill.7
+-1000000	x86_64-linux-gnu-MiEuler Linux 5.10.0 -1\ usecs %fill.7
+-1000000	x86_64-linux-gnu-MiEuler Linux 5.10.0 -1\ usecs %fill.7
+-1000000	x86_64-linux-gnu-MiEuler Linux 5.10.0 -1\ usecs %fill.7
+-1000000	x86_64-linux-gnu-MiEuler Linux 5.10.0 -1\ usecs %fill.7
+%Title n Number of context switches per second, 8 small processes
+%Title s lmbench v1.1
+%ps 16
+%ft R
